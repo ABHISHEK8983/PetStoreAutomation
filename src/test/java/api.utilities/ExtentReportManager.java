@@ -29,7 +29,7 @@ public class ExtentReportManager implements ITestListener {
         String reportPath = reportDir + File.separator + repName;
         sparkReporter = new ExtentSparkReporter(reportPath);
         sparkReporter.config().setDocumentTitle("RestAssured-Automation");
-        sparkReporter.config().setReportName("Pet Store Users API");
+        sparkReporter.config().setReportName("Pet Store Users API Automation");
         sparkReporter.config().setTheme(Theme.DARK);
 
         extent = new ExtentReports();
