@@ -23,7 +23,8 @@ public class ExtentReportManager implements ITestListener {
     @Override
     public void onStart(ITestContext testContext) {
         String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
-        repName = "Test-Report-" + timeStamp + ".html";
+//        repName = "Test-Report-" + timeStamp + ".html";
+        repName = "extent-reports.html";
         String reportDir = System.getProperty("user.dir") + File.separator + "reports";
         String reportPath = reportDir + File.separator + repName;
         sparkReporter = new ExtentSparkReporter(reportPath);
